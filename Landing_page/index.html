@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Digital Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('hero.jpg') center/cover no-repeat;
+      filter: blur(4px) brightness(0.7);
+      z-index: 1;
+    }
+
+    .hero h2,
+    .hero p,
+    .hero .buttons {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #ff4081;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .features {
+      background: linear-gradient(to right, #f857a6, #ff5858);
+      display: flex;
+      justify-content: space-around;
+      color: white;
+      padding: 30px 0;
+    }
+
+    .features div {
+      text-align: center;
+      width: 30%;
+    }
+
+    .about {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about img {
+      width: 200px;
+      margin: 20px auto;
+    }
+
+    .services {
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .service-boxes {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .service {
+      width: 30%;
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Landing Page</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Creative Digital Agency</h2>
+    <p>We are here to build your digital dreams</p>
+    <div class="buttons">
+      <a href="#">Read More</a>
+      <a href="#">Request a Consult</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div>
+      <h3>Launch Business</h3>
+      <p>Start strong with our expert strategies.</p>
+    </div>
+    <div>
+      <h3>Online Support Team</h3>
+      <p>We're here for you 24/7.</p>
+    </div>
+    <div>
+      <h3>Time Management</h3>
+      <p>Maximize productivity with our tools.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>15 years, we are passionate about achieving better results for our clients.</p>
+    <img src="person-thinking.jpg" alt="About Image">
+    <p>We’ve helped over 1500 businesses succeed with our innovative strategies and dedicated team. Let's grow together.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service">
+        <h4>User Experience</h4>
+        <p>Design that keeps your audience engaged.</p>
+      </div>
+      <div class="service">
+        <h4>Creative Design</h4>
+        <p>Innovative visuals tailored to your brand.</p>
+      </div>
+      <div class="service">
+        <h4>Retina Ready</h4>
+        <p>High quality visuals for all screens.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Creative Digital Agency. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
